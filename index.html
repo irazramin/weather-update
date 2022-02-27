@@ -1,22 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Weather today</title>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
+    <script
+      src="https://kit.fontawesome.com/03c654ecea.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <main class="main" id="main">
-        <section class="today"></section>
-        <section class="all-update">
-            <div class="all-update-container">
-                
-            </div>
-        </section>
+      <section class="today">
+        <div class="today-container">
+          <div class="search-input" id="search-input">
+            <span><i class="fa-solid fa-magnifying-glass"></i></span>
+            <input id="search-city" type="text" placeholder="search for places" />
+          </div>
+          <img src="img/cloudy.png" alt="" />
+          <div>
+            <h2><span id="today-temp" class="today-temp">12°</span>c</h2>
+          </div>
+          <div class="days">
+            <h4 id="day" class="day">
+              Sunday, <span class="hour" id="hour">8:30</span>
+            </h4>
+          </div>
+          <div class="situtation">
+           <img id="weather-icon" src="http://openweathermap.org/img/w/01d.png" alt="">
+           <h5 class="weather-situation" id="weather-situation" >clear sky</h5>
+          </div>
+        </div>
+      </section>
+      <section class="all-update">
+        <div class="all-update-container"></div>
+      </section>
     </main>
 
     <script src="js/index.js"></script>
-</body>
+  </body>
 </html>
