@@ -17,20 +17,28 @@
         <div class="today-container">
           <div class="search-input" id="search-input">
             <span><i class="fa-solid fa-magnifying-glass"></i></span>
-            <input id="search-city" type="text" placeholder="search for places" />
+            <input
+              id="search-city"
+              type="text"
+              placeholder="search for places"
+            />
+          </div>
+          <div>
+            <img id="loader" class="loader" src="img/loading.svg" alt="" />
           </div>
           <img src="img/cloudy.png" alt="" />
           <div>
-            <h2><span id="today-temp" class="today-temp">12°</span>c</h2>
+            <h2><span id="today-temp" class="today-temp">12</span>c</h2>
           </div>
           <div class="days">
-            <h4 id="day" class="day">
-              Sunday, <span class="hour" id="hour">8:30</span>
+            <h4 class="day">
+              <span id="day"></span>
+              <span class="hour" id="hour">8:30</span>
             </h4>
           </div>
           <div class="situtation">
-           <img id="weather-icon" src="http://openweathermap.org/img/w/01d.png" alt="">
-           <h5 class="weather-situation" id="weather-situation" >clear sky</h5>
+            <img id="weather-icon" src="" alt="" />
+            <h5 class="weather-situation" id="weather-situation"></h5>
           </div>
         </div>
       </section>
