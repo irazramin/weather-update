@@ -24,7 +24,7 @@ body {
 /* today section */
 .today {
     padding: 10px 20px;
-    width: 350px;
+    width: 400px;
     transition: width .5s ease-in;
 }
 
@@ -105,6 +105,7 @@ h2 span {
     width: 100%;
     width: 60px;
     margin: 0;
+    margin-left: -15px;
 }
 
 .weather-situation {
@@ -120,9 +121,95 @@ h2 span {
 }
 
 .all-update-container {
-    background-color: white;
     overflow: auto;
-    height: 90%;
+    height: 95%;
     width: 90%;
-    margin: 30px auto;
+    margin: 20px auto;
+
+}
+
+.all-update-container h4 {
+    margin-top: 0;
+}
+
+.weekly-update-container {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    grid-gap: 15px;
+    text-align: center;
+}
+
+.weekly-update {
+    background-color: #ffffff;
+    padding: 10px 0;
+    border-radius: 10px;
+}
+
+.weekly-update h6 {
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.weekly-update img {
+    width: 30px;
+}
+
+.weekly-update p {
+    margin-bottom: 0;
+}
+
+.todays-highlights {
+    margin-top: 40px;
+
+}
+
+.highlights {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.highlight {
+    padding: 20px;
+    height: 150px;
+    border-radius: 20px;
+    background-color: #ffffff;
+}
+
+.highlight h6 {
+    margin: 0;
+    font-size: 14px;
+    font-weight: 400;
+    color: #999;
+}
+
+.highlight h2{
+    font-size: 18px;
+}
+.highlight h2 span{
+    font-size: 35px;
+}
+
+.s-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.s-container h5 {
+    margin: 0 5px;
+}
+
+.s-container img {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+}
+
+.sunrise,
+.sunset {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
 }
