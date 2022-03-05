@@ -10,10 +10,11 @@
       crossorigin="anonymous"
     ></script>
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
   </head>
   <body>
     <main class="main" id="main">
-      <section class="today">
+      <section class="today" id="today">
         <div class="today-container">
           <div class="search-input" id="search-input">
             <span><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -45,71 +46,10 @@
       <section class="all-update">
         <div class="all-update-container">
           <h4>Week</h4>
-          <div class="weekly-update-container">
-            <div class="weekly-update">
-              <h6>Sun</h6>
-              <img src="img/cloudy.png" alt="" />
-              <p>
-                <span id="weekly-max-temp">13</span>-<span id="weekly-min-temp"
-                  >7</span
-                >
-              </p>
-            </div>
-            <div class="weekly-update">
-              <h6>Mon</h6>
-              <img src="img/cloudy.png" alt="" />
-              <p>
-                <span id="weekly-max-temp">13</span>-<span id="weekly-min-temp"
-                  >7</span
-                >
-              </p>
-            </div>
-            <div class="weekly-update">
-              <h6>Tue</h6>
-              <img src="img/cloudy.png" alt="" />
-              <p>
-                <span id="weekly-max-temp">13</span>-<span id="weekly-min-temp"
-                  >7</span
-                >
-              </p>
-            </div>
-            <div class="weekly-update">
-              <h6>Wed</h6>
-              <img src="img/cloudy.png" alt="" />
-              <p>
-                <span id="weekly-max-temp">13</span>-<span id="weekly-min-temp"
-                  >7</span
-                >
-              </p>
-            </div>
-            <div class="weekly-update">
-              <h6>Thu</h6>
-              <img src="img/cloudy.png" alt="" />
-              <p>
-                <span id="weekly-max-temp">13</span>-<span id="weekly-min-temp"
-                  >7</span
-                >
-              </p>
-            </div>
-            <div class="weekly-update">
-              <h6>Fri</h6>
-              <img src="img/cloudy.png" alt="" />
-              <p>
-                <span id="weekly-max-temp">13</span>-<span id="weekly-min-temp"
-                  >7</span
-                >
-              </p>
-            </div>
-            <div class="weekly-update">
-              <h6>Sat</h6>
-              <img src="img/cloudy.png" alt="" />
-              <p>
-                <span id="weekly-max-temp">13</span>-<span id="weekly-min-temp"
-                  >7</span
-                >
-              </p>
-            </div>
-          </div>
+          <div
+            class="weekly-update-container"
+            id="weekly-update-container"
+          ></div>
           <div class="todays-highlights">
             <h4>Todays Highlights</h4>
             <div class="highlights">
@@ -124,11 +64,11 @@
               <div class="highlight">
                 <h6>Sunrise & Sunset</h6>
                 <div class="s-container">
-                  <div class="sunrise" >
+                  <div class="sunrise">
                     <img src="img/sunrise.png" alt="" />
                     <h5 id="sunrise">6:35AM</h5>
                   </div>
-                  <div class="sunset" >
+                  <div class="sunset">
                     <img src="img/sunset.png" alt="" />
                     <h5 id="sunset">6:35AM</h5>
                   </div>
@@ -145,12 +85,15 @@
                 <h5>Average</h5>
               </div>
               <div class="highlight">
-                  <h6>Air Quality</h6>
+                <h6>Air Quality</h6>
                 <h2><span id="air-quality">105</span></h2>
                 <h5>Unhealthy</h5>
               </div>
             </div>
           </div>
+        </div>
+        <div class="menu-bar" id="menu-bar">
+          <i class="fa-solid fa-bars"></i>
         </div>
       </section>
     </main>

@@ -1,0 +1,42 @@
+@media screen and (max-width:639px) {
+    .today {
+        padding: 10px 20px;
+        width: 180px;
+        transition: all .4s ease-out;
+    }
+.search-input input {
+    display: none;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    margin-left: 10px;
+    font-size: 12px;
+    font-weight: 600;
+}
+
+    .today-container img {
+        width: 100px;
+        object-fit: cover;
+        margin-top: 30px;
+    }
+
+    h2 span {
+        font-size: 30px;
+        font-weight: 100;
+    }
+
+
+    .highlights {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 20px;
+    }
+
+    .weekly-update-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 15px;
+        text-align: center;
+    }
+
+}
