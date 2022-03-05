@@ -4,6 +4,11 @@
         width: 100%;
         transition: all .4s ease-out;
     }
+
+.today.sm-d-today{
+    padding: 0;
+    width: 0;
+    }
 .search-input input {
     display: none;
     width: 100%;
@@ -39,4 +44,19 @@
         text-align: center;
     }
 
+}
+
+@media screen and (min-width:640px) and (max-width:1023px) {
+  .highlights {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+  }
+
+  .weekly-update-container {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 15px;
+      text-align: center;
+  }
 }
