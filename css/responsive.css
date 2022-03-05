@@ -1,7 +1,7 @@
 @media screen and (max-width:639px) {
     .today {
         padding: 10px 20px;
-        width: 180px;
+        width: 100%;
         transition: all .4s ease-out;
     }
 .search-input input {
