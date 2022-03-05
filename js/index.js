@@ -85,6 +85,8 @@ const getWeatherApi = async  (city) =>{
 }
 
 
+getWeatherApi('dhaka')
+
 function getLocation() {
   if (navigator.geolocation) {
     navigator.geolocation.getCurrentPosition(showPosition);
